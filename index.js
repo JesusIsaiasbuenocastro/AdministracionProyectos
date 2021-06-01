@@ -22,7 +22,7 @@ app.use('/api/proyectos', require('./routes/proyectos'));
 app.use('/api/tareas', require('./routes/tareas'));
 
 //puerto de la app
-const port = process.env.PORT  || 4000;
+const port = process.env.port  || 4000;
 
 //arrancar el servidor 
 app.listen(port,'0.0.0.0' , ()=>{
