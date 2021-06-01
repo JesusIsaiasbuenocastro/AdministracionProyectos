@@ -22,9 +22,9 @@ app.use('/api/proyectos', require('./routes/proyectos'));
 app.use('/api/tareas', require('./routes/tareas'));
 
 //puerto de la app
-const PORT = process.env.PORT  || 4000;
+const port = process.env.port  || 4000;
 
 //arrancar el servidor 
-app.listen(PORT, ()=>{
-    console.log(`EL SERVIDORESTA FUNCIONANDO EN EL PUERTO ${PORT} `)
+app.listen(port,'0.0.0.0' , ()=>{
+    console.log(`EL SERVIDORESTA FUNCIONANDO EN EL PUERTO ${port} `)
 })
